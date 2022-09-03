@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,14 @@
     <title>Netflix</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
+
 <body>
+ <header>
+
+     <img src="./img/netflix-logo.png" alt="Unable to load Logo" id="logo">
+    </header>
     <div class="container">
         <div class="box">
 
@@ -17,29 +24,43 @@
             </div>
             <form action="#">
                 <input type="text" placeholder="Email or phone number" size="26">
-                <input type="password" placeholder="Password">  
+                <input type="password" placeholder="Password">
             </form>
             <div class="btn">
-                
+
                 <button type="button" value="submit">Sign In</button>
             </div>
-            
-            <span>
-                <input type="checkbox" checked > Remember Me
-            </span>
-            <span>
-                Need help?
-            </span>
-            <div id="details">
-                <span>
-                    New to Netflix? 
-                </span> 
-                <div class="heading">
-                    Sign Up now
-                </div>
-                <span>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#"> Learn more.</a></span>
+            <div id="help-section">
+                <span id="remember">
+                    <input type="checkbox" checked id="checkbox"> Remember me
+                </span>
+                <span id="help">
+                    Need help?
+                </span>
             </div>
+            <div id="details">
+                <span id="new-to-netflix">
+                    New to Netflix?
+                </span>
+                <div id="signup">
+                    Sign Up now.
+                </div>
+            </div>
+            <span id="re-captcha">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#"> Learn
+                    more.</a></span>
         </div>
+    </div>
+    <div class="contact">
+
+        Questions? Call 000-800-040-1843
+        <ul>
+            <li>
+                
+                FAQ 
+            </li>
+            Help CentreTerms of UsePrivacyCookie PreferencesCorporate Information
+        </ul>
         </div>
 </body>
+
 </html>
