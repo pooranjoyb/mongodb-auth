@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/App.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
@@ -23,12 +23,11 @@
                 Sign In
             </div>
             <form action="#">
-                <input type="text" placeholder="Email or phone number" size="26">
-                <input type="password" placeholder="Password">
+                <input type="text" placeholder="Email or phone number" size="26" id="email">
+                <input type="password" placeholder="Password" id="password">
             </form>
             <div class="btn">
-
-                <button type="button" value="submit">Sign In</button>
+                <button type="button" value="submit" onclick="signin()">Sign In</button>
             </div>
             <div id="help-section">
                 <span id="remember">
@@ -53,33 +52,35 @@
     </div>
     <footer id="contact">
         <span id="question-line">
-                Questions? Call 000-800-040-1843
-       </span>
-            <ul id="line1">
-                <li>
-                    FAQ
-                </li>
-                <li>
-                    Help Centre
-                </li>
-                <li>
-                    Terms of Use
-                </li>
-                <li>
-                    Privacy
-                </li>
+            Questions? Call 000-800-040-1843
+        </span>
+        <ul id="line1">
+            <li>
+                FAQ
+            </li>
+            <li>
+                Help Centre
+            </li>
+            <li>
+                Terms of Use
+            </li>
+            <li>
+                Privacy
+            </li>
 
-            </ul>
-            <ul id="line2">
-                <li>
+        </ul>
+        <ul id="line2">
+            <li>
 
-                    Cookie Preferences
-                </li>
+                Cookie Preferences
+            </li>
 
-                <li>
-                    Coorporate Information
-                </li>
-            </ul>
+            <li>
+                Coorporate Information
+            </li>
+        </ul>
     </footer>
+    <script src="./App.js"></script>
 </body>
+
 </html>
