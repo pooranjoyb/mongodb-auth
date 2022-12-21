@@ -17,7 +17,7 @@ https://pooranjoyb.github.io/netflix-signup-clone/
 
 - Copy the following command to clone this repository in your local storage:
 ```
-https://pooranjoyb.github.io/netflix-signup-clone/
+git clone https://pooranjoyb.github.io/netflix-signup-clone/
 ```
 - Hit the Enter key.
 
