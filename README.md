@@ -6,10 +6,6 @@
 ---
 
 ## How to access this project ?
- 
- **Using the link**
-https://pooranjoyb.github.io/netflix-signup-clone/
-
 
  **Using terminal to clone**
 
@@ -32,4 +28,4 @@ Contributions and Commits are apppreciated.
 
 <h3 align="center">Screenshot </h3>
 
-![Unable to load image file](https://github.com/pooranjoyb/netflix-signup-clone/blob/master/sample.png?raw=true)
+![Screenshot of the page](https://github.com/pooranjoyb/Netflix_Signup_Clone/blob/master/sample.png)
