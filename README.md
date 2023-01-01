@@ -1,31 +1,42 @@
-<h1 align="center">NETFLIX-signup clone </h1>
+# NETFLIX-Signup Clone
 
 
-<h3 align="center">Please note that the page is under development and is only desktop responsive</h3>
+## Please note that the page is under development and is only desktop responsive
 
----
+## Overview
 
-## How to access this project ?
+- This App is the clone of original Netflix signup UI and can be previewed by cloning into local directory
+- It is not hosted on any hosting service due to copyright issues
 
- **Using terminal to clone**
+## Usage
 
-- Open terminal/powershell/gitbash 
+- Open Gitbash/Terminal/Windows-Powershell
 
 - Copy the following command to clone this repository in your local storage:
 ```
-git clone https://pooranjoyb.github.io/netflix-signup-clone/
+git clone https://github.com/pooranjoyb/Netflix_Signup_Clone.git
 ```
 - Hit the Enter key.
 
-It would take a few seconds to clone the repository onto your system.
-Note: Please note that cloning depends on the internet connection and the time would depend on your connection bandwidth. If Git is not able to clone due to a weak connection, it would display a fatal error and the user is requested to try again until the above message does not appear.
+It would take a few seconds to clone the repository onto your system.<br>
+**Note:** Cloning depends on the internet connection and the time would depend on your connection bandwidth. If Git is not able to clone due to a weak connection, it would display a fatal error and the user is requested to try again until the above message does not appear.
 
 - Check in the local drive by navigating to it manually.
 
-- Open the ***index.html*** file to view the project
 
-Contributions and Commits are apppreciated. 
-
-<h3 align="center">Screenshot </h3>
+## Screenshot
 
 ![Screenshot of the page](https://github.com/pooranjoyb/Netflix_Signup_Clone/blob/master/sample.png)
+
+## Contribution
+
+Contributions and Commits are apppreciated. <br> 
+Add an **ISSUE** or create a **PULL REQUEST** to contribute 
+
+## Agreement
+
+This data is provided "as is" without warranty or any representation of accuracy, timeliness or completeness.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
