@@ -8,11 +8,7 @@ body {
 }
 
 html {
-<<<<<<< HEAD:styles/App.css
-    background: url(/img/background.jpg) no-repeat;
-=======
     background: url(../img/background.jpg) no-repeat;
->>>>>>> 92fc46546622cdfceb0f777eb2cac30b50e7414c:styles/main.css
     background-size: cover;
     display: block;
     height: 145%;
