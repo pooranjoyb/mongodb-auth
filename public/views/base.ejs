@@ -22,13 +22,13 @@
             <div class="heading" id="main">
                 Sign In
             </div>
-            <form action="#">
-                <input type="text" placeholder="Email or phone number" size="26" id="email">
-                <input type="password" placeholder="Password" id="password">
+            <form action="/route/login" method="POST">
+                <input type="text" placeholder="Email or phone number" size="26" id="email" name="email">
+                <input type="password" placeholder="Password" id="password" name="password">
+                <div class="btn">
+                    <button type="submit" value="submit">Sign In</button>
+                </div>
             </form>
-            <div class="btn">
-                <button type="button" value="submit" onclick="signin()">Sign In</button>
-            </div>
             <div id="help-section">
                 <span id="remember">
                     <input type="checkbox" checked id="checkbox"> Remember me

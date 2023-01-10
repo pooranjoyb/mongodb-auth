@@ -1,10 +1,10 @@
 import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
-import bodyparser from'body-parser'
+import bp from'body-parser'
 import session from 'express-session'
 import { uuid } from 'uuidv4'
-
+import router from './Routes/route.js'
 dotenv.config();
 
 const app = express();
@@ -15,10 +15,10 @@ app.set('view engine', 'ejs');
 
 app.use(cors());
 
-app.use(bodyparser.json());
-app.use(bodyparser.urlencoded({extended: true}))
+app.use(bp.json());
+app.use(bp.urlencoded({extended: false}))
 
-
+// app.use(express.json());
 //loading static assets
 app.use(express.static('./public'));
 
@@ -27,6 +27,8 @@ app.use(session({
     resave: false,
     saveUninitialized: true
 }));
+
+app.use('/route', router)
 
 //home-route
 app.get('/', (req, res) => {

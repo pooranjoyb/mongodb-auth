@@ -81,6 +81,10 @@ form input {
     color: white;
 }
 
+form button{
+    cursor: pointer;
+}
+
 .btn {
     margin-top: 1.6pc;
     padding-bottom: 12px;
