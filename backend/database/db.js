@@ -1,6 +1,10 @@
 import mongoose from "mongoose";
+import dotenv from 'dotenv'
+
+dotenv.config();
+
 const Connection = () => {
-    const MONGODB_URI = 'mongodb://127.0.0.1:27017/LoginData';
+    const MONGODB_URI = process.env.MONGODB_URI;
 
     mongoose.set('strictQuery', false);
     mongoose.connect(MONGODB_URI);
