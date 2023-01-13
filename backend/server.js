@@ -5,9 +5,12 @@ import bp from'body-parser'
 import session from 'express-session'
 import { uuid } from 'uuidv4'
 import router from './Routes/route.js'
+import Connection from './database/db.js'
+
 dotenv.config();
 
 const app = express();
+
 const PORT = process.env.PORT;
 
 //setting up viewport
@@ -18,7 +21,6 @@ app.use(cors());
 app.use(bp.json());
 app.use(bp.urlencoded({extended: false}))
 
-// app.use(express.json());
 //loading static assets
 app.use(express.static('./public'));
 
@@ -28,6 +30,7 @@ app.use(session({
     saveUninitialized: true
 }));
 
+//login-logout routes
 app.use('/route', router)
 
 //home-route
@@ -37,4 +40,5 @@ app.get('/', (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`)
+    Connection();
 })

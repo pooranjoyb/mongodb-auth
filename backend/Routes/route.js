@@ -1,5 +1,7 @@
 import express from 'express'
+import Login from '../database/model/schema.js';
 import dotenv from 'dotenv'
+import mongoose from 'mongoose';
 
 dotenv.config();
 
@@ -10,14 +12,30 @@ const credentials = {
     password: process.env.password
 }
 
+//admin route
 router.post('/login', (req, res) => {
+    const usnInput = req.body.email;
+    const passInput = req.body.password;
 
-    if(req.body.email == credentials.email && req.body.password == credentials.password){
+    var new_user = new Login({
+        username: usnInput,
+        password: passInput
+    })
+    
+    if (usnInput == credentials.email && passInput == credentials.password) {
+        new_user.save().catch((err) => {
+            console.log(err);
+        })
         req.session.user = req.body.email;
-        res.end("Login Success")
-    }else{
+        res.render('../public/views/portal')
+    } else {
         res.end("Invalid Username")
     }
+})
+
+//logout route
+router.post('/logout', (req, res) => {
+    res.redirect('/');
 })
 
 export default router;
