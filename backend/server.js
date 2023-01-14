@@ -2,8 +2,6 @@ import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
 import bp from'body-parser'
-import session from 'express-session'
-import { uuid } from 'uuidv4'
 import router from './Routes/route.js'
 import Connection from './database/db.js'
 
@@ -23,12 +21,6 @@ app.use(bp.urlencoded({extended: false}))
 
 //loading static assets
 app.use(express.static('./public'));
-
-app.use(session({
-    secret: uuid(),
-    resave: false,
-    saveUninitialized: true
-}));
 
 //login-logout routes
 app.use('/route', router)
