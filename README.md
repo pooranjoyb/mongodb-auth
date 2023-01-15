@@ -1,4 +1,4 @@
-# NETFLIX-Signup Clone
+# MongoDB Login
 
 
 ## Please note that the page is under development and is only desktop responsive
@@ -7,6 +7,8 @@
 
 - This App is the clone of original Netflix signup UI and can be previewed by cloning into local directory
 - It is not hosted on any hosting service due to copyright issues
+- I've used MongoDB for storing login info for the ADMIN
+- Two routes have been created for the home and login
 
 ## Usage
 
@@ -14,7 +16,7 @@
 
 - Copy the following command to clone this repository in your local storage:
 ```
-git clone https://github.com/pooranjoyb/Netflix_Signup_Clone.git
+git clone https://github.com/pooranjoyb/mongodb-auth.git
 ```
 - Hit the Enter key.
 
@@ -26,7 +28,11 @@ It would take a few seconds to clone the repository onto your system.<br>
 
 ## Screenshot
 
-![Screenshot of the page](https://github.com/pooranjoyb/Netflix_Signup_Clone/blob/master/sample.png)
+![Screenshot of the homepage](https://github.com/pooranjoyb/Netflix_Signup_Clone/blob/master/sample.png)
+<br>
+
+![Screenshot of the route](https://github.com/pooranjoyb/Netflix_Signup_Clone/blob/master/loginRoute.png)
+
 
 ## Contribution
 
