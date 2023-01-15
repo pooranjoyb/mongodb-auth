@@ -28,10 +28,10 @@ It would take a few seconds to clone the repository onto your system.<br>
 
 ## Screenshot
 
-![Screenshot of the homepage](https://github.com/pooranjoyb/Netflix_Signup_Clone/blob/master/sample.png)
+![Screenshot of the homepage](https://github.com/pooranjoyb/mongodb-auth/blob/master/sample.png)
 <br>
 
-![Screenshot of the route](https://github.com/pooranjoyb/Netflix_Signup_Clone/blob/master/loginRoute.png)
+![Screenshot of the route](https://github.com/pooranjoyb/mongodb-auth/blob/master/loginRoute.png)
 
 
 ## Contribution
